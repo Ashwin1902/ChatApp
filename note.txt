@@ -1,0 +1,12 @@
+web sockets
+
+normally what happens is the client sends a request to the server and the server sends a response back to the client. then this cycle is terminated until the client sends a new request. So each time you have to send a new request.
+
+agar hume iss tarike se ek client se dusre client ko msg bhejna hai toh hum kaise karenge? ek tarika ye hai ki ek client server ko msg bhejega aur baaki saare client har ek second me server ko poll karte rahenge ki koi msg hai ya nhi agar hoga toh server client ko bhej dega. this is known as polling. iski wajah se server pe bekar me load badhega isko solve akrne ke liye we have websockets
+
+
+web sockets ke case me client server ko http request bhejta hai to establish a web socket connection. the server accepts this request and the web socket connection is established ye connection close nhi hoga after the req res cycle ends.
+ab client aur server ek dusre ko kitne bhi msg send kar sakte hai. iske through client se dusre client ko bhi msg send ho jayega easily.
+it can be closed any time a user wants
+
+websocket is a full duplex communication 
